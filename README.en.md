@@ -1,0 +1,32 @@
+# amber-deepseek
+
+Public periodic [AMBER](https://github.com/getaskclaw/amber-eval) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort bands. **Cases stay private; results are public.** 中文说明:[README.md](README.md)
+
+## What this is
+
+- One `results/YYYY-Www.md` per issue: same cases, same harness, full library per model; same-family versions and providers side by side.
+- Each issue pins: library size and hashes, per-case d2 score and pass/fail, terminal states, token usage (when the lane reports it) and latency, environment fingerprint, and a qualitative verdict written under evidence discipline.
+- Cases, oracles, transcripts and intermediates are **never published**.
+- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin). Third-party-vendor scores for the same deepseek-v4 family live in those repos — this repo's comparison axis is **cross-version on the official lane**, and every cross-repo citation carries an explicit date and band declaration.
+
+## Publication red lines
+
+1. Publish only: scores and aggregates, token usage (when reported), speed, qualitative verdicts.
+2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, anything that could reconstruct a case.
+3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — verifiable against the public hash index in [amber-eval](https://github.com/getaskclaw/amber-eval).
+4. Case numbering is private: public matrices use stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes only.
+5. Tone: community measurement, not vendor attacks.
+
+## A methodological premise
+
+Same model name, same provider, two runs can still score differently — inference parameters, load, and server-side versions drift. Preview/experimental models also carry lifecycle risk (they can vanish overnight). Every conclusion here is dated and banded, and we re-test periodically. A single day's number is a snapshot, not a law.
+
+## Results index
+
+| Issue | Content | Headline |
+|---|---|---|
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (22 of 23 cases; vision case capability-skipped) | 14/22 (12/21 public subset); zero invalid papers in 25/25; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, with clear regressions on adversarial review and delivery form |
+
+## Disclaimer
+
+Not affiliated with or sponsored by DeepSeek. Scores are dated, band-specific snapshots, not purchasing advice.
