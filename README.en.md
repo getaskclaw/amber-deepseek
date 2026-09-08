@@ -25,7 +25,7 @@ Same model name, same provider, two runs can still score differently — inferen
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (22 of 23 cases; vision case capability-skipped) | 14/22 (12/21 public subset); zero invalid papers in 25/25; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, with clear regressions on adversarial review and delivery form |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (23 cases) | 14/23 (12/21 public subset); zero invalid scored papers; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, clear regressions on adversarial review and delivery form; vision case first mis-judged capability-skip, retaken after a raw-API probe and scored a fail (see Errata) |
 
 ## Disclaimer
 
