@@ -1,6 +1,6 @@
 # amber-deepseek
 
-Public periodic [AMBER](https://github.com/getaskclaw/amber-eval) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort bands. **Cases stay private; results are public.** 中文说明:[README.md](README.md)
+Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort bands. **Cases stay private; results are public.** 中文说明:[README.md](README.md)
 
 ## What this is
 
@@ -13,7 +13,7 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber-eval) benchmark resu
 
 1. Publish only: scores and aggregates, token usage (when reported), speed, qualitative verdicts.
 2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, anything that could reconstruct a case.
-3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — verifiable against the public hash index in [amber-eval](https://github.com/getaskclaw/amber-eval).
+3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — verifiable against the public hash index in [amber](https://github.com/getaskclaw/amber).
 4. Case numbering is private: public matrices use stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes only.
 5. Tone: community measurement, not vendor attacks.
 
