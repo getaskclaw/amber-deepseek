@@ -25,7 +25,7 @@ Same model name, same provider, two runs can still score differently — inferen
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (23 cases) | 14/23 (12/21 public subset); zero invalid scored papers; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, clear regressions on adversarial review and delivery form; vision case first mis-judged capability-skip, retaken after a raw-API probe and scored a fail (see Errata); 2026-09-10 addendum: preview retired on schedule, GA `deepseek-flash` identity verification green on a 3-case signature, same-name cross-vendor full-library duels in [amber-opencode](https://github.com/getaskclaw/amber-opencode)/[amber-commandcode](https://github.com/getaskclaw/amber-commandcode) W37 |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (23 cases) | 14/23 (12/21 public subset); zero invalid scored papers; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, clear regressions on adversarial review and delivery form; vision case first mis-judged capability-skip, retaken after a raw-API probe and scored a fail (see Errata); 2026-09-10 addendum: preview retired on schedule, GA `deepseek-flash` identity verification green on a 3-case signature; **Addendum 2 (same day): GA full-library debut 16/23 (14/21 public subset)** — blank-paper disease and clean-review regression both fixed, same band as [amber-opencode](https://github.com/getaskclaw/amber-opencode) (16/23) / [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (17/23), deferred-exam list closed |
 
 ## Disclaimer
 

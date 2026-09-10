@@ -27,7 +27,7 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910(预览版)全库首考(23 案) | 14/23(公共 21 案子集 12/21);计分卷零基建废卷;输入 token 约为 0731 同族三方道的 1/30;施工/OPS 强,对抗审查与交付形态有明确退步面;视觉案一度误判 capability-skip,裸探针翻案补考后计挂(详期文 Errata);2026-09-10 附记:预览如期下线,正代 `deepseek-flash` 身份核验 3 案签名全绿,同名跨厂商全库对拍见 [amber-opencode](https://github.com/getaskclaw/amber-opencode)/[amber-commandcode](https://github.com/getaskclaw/amber-commandcode) W37 |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910(预览版)全库首考(23 案) | 14/23(公共 21 案子集 12/21);计分卷零基建废卷;输入 token 约为 0731 同族三方道的 1/30;施工/OPS 强,对抗审查与交付形态有明确退步面;视觉案一度误判 capability-skip,裸探针翻案补考后计挂(详期文 Errata);2026-09-10 附记:预览如期下线,正代 `deepseek-flash` 身份核验 3 案签名全绿;**Addendum 2(同日):正代全库首考 16/23(公共子集 14/21)**——白卷病与干净审查退步均修复,与 [amber-opencode](https://github.com/getaskclaw/amber-opencode)(16/23)/[amber-commandcode](https://github.com/getaskclaw/amber-commandcode)(17/23)同分带,欠考清单销账 |
 
 ## 免责
 
