@@ -1,0 +1,183 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "Face profile: deepseek-flash pass rate by face",
+   "(2026-W37 full matrix, official-lane GA, 23-case library)"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "label = cases passed / cases in face; ✗ and ∅ count as not passed; scored d2 cells read as ✓/✗ only",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "face": "req-drift",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "face": "ops",
+    "rate": 1.0,
+    "label": "6/6"
+   },
+   {
+    "face": "build",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "face": "UI build",
+    "rate": 0.0,
+    "label": "0/1"
+   },
+   {
+    "face": "vision",
+    "rate": 0.0,
+    "label": "0/1"
+   }
+  ]
+ },
+ "width": 520,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3,
+    "color": "#00838F"
+   },
+   "encoding": {
+    "x": {
+     "field": "face",
+     "type": "nominal",
+     "sort": [
+      "req-drift",
+      "text",
+      "ops",
+      "build",
+      "review",
+      "verify",
+      "UI build",
+      "vision"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "rate",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1
+      ]
+     },
+     "axis": {
+      "title": "face pass rate",
+      "format": ".0%",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1
+      ]
+     }
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -5,
+    "fontSize": 12,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "face",
+     "type": "nominal",
+     "sort": [
+      "req-drift",
+      "text",
+      "ops",
+      "build",
+      "review",
+      "verify",
+      "UI build",
+      "vision"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "rate",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1
+      ]
+     },
+     "axis": {
+      "title": "face pass rate",
+      "format": ".0%",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1
+      ]
+     }
+    },
+    "text": {
+     "field": "label",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}

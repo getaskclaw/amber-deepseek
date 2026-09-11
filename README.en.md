@@ -27,6 +27,11 @@ Same v4.1 brain, GA day (2026-09-10), same effort=high, same 23 cases and hashes
 
 Same model name, same provider, two runs can still score differently — inference parameters, load, and server-side versions drift. Preview/experimental models also carry lifecycle risk (they can vanish overnight). Every conclusion here is dated and banded, and we re-test periodically. A single day's number is a snapshot, not a law.
 
+## Charts
+
+- **Face profile** (2026-W37 full matrix, the stable deepseek-flash on its GA-day full-library run, grouped by face): ops 6/6, text 3/3 and build 5/6 are the strengths; verify 0/3, vision 0/1 and UI build 0/1 still fail. Per-case matrix in the [2026-W37 issue](results/2026-W37.md).
+  ![Face profile: deepseek-flash pass rate by face](docs/images/face-profile-2026-w37.en.png)
+
 ## Results index
 
 | Issue | Candidate | Score (23 / public 21) | Headline |
