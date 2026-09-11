@@ -9,7 +9,7 @@ English: [README.en.md](README.en.md)
 - 一期固定报告：题集规模与哈希、每案 d2 分与通过/失败、终端终态、token 用量（若车道上报）与时延、环境指纹、按证据纪律写的定性裁决。
 - 题目、oracle、transcript、中间产物**永不公开**（见下「发布纪律」）。
 - 姐妹仓：[amber-gpt](https://github.com/getaskclaw/amber-gpt)（GPT 系周测）、[amber-crof](https://github.com/getaskclaw/amber-crof)（CrofAI 周测）、[amber-ollama](https://github.com/getaskclaw/amber-ollama)（Ollama Cloud 周测）、[amber-devin](https://github.com/getaskclaw/amber-devin)（Devin 周测）、[amber-opencode](https://github.com/getaskclaw/amber-opencode)（OpenCode Go 道）、[amber-commandcode](https://github.com/getaskclaw/amber-commandcode)（CommandCode 道）。同一个 deepseek-v4 家族在 CrofAI/Ollama 三方道的成绩见对应仓库；**同名模型跨厂商对拍**（官方道 / OpenCode Go / CommandCode——同名不一定是同一端点）见后两仓。本仓的对照轴是**官方道跨版本**，跨仓引用一律带日期与档位声明。
-- AMBER 是 agentic 实战题库(施工/运维/审查/视觉/需求漂移),规范与制题工具见 [getaskclaw/amber](https://github.com/getaskclaw/amber);考题本体私有。
+- AMBER 是 agentic 实战题库（施工/运维/审查/视觉/需求漂移），规范与制题工具见 [getaskclaw/amber](https://github.com/getaskclaw/amber)；考题本体私有。
 
 ## 一分钟看懂 W37
 
@@ -31,7 +31,7 @@ English: [README.en.md](README.en.md)
 
 ## 结果索引
 
-| 期 | 考生 | 成绩(23 案 / 公共子集 21) | 一句话 |
+| 期 | 考生 | 成绩（23 案 / 公共子集 21） | 一句话 |
 |---|---|---|---|
 | [2026-W37](results/2026-W37.md) | **deepseek-flash**（正代，GA 当日） | **16/23**（14/21） | 白卷病与干净审查退步均修复；三道同分带；欠考清单销账；input 0.75M 家族最低带；审查/视觉/UI 三面仍挂 |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910（预览，已下线） | 14/23（12/21） | 计分卷零废卷；input≈0731 三方道的 1/30；施工/OPS 强；视觉案误判翻案补考（详期文 Errata/Addenda） |
