@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#FAFEFE",
+  "title": {"text": "Three GA lanes + the retired preview — 2026-W37 (full 23-case library, effort=high)", "fontSize": 15, "anchor": "start"},
+  "data": {"values": [
+    {"lane": "deepseek-flash @ CommandCode", "pass": 17, "kind": "GA"},
+    {"lane": "deepseek-flash @ DeepSeek official", "pass": 16, "kind": "GA"},
+    {"lane": "deepseek-flash @ OpenCode Go", "pass": 16, "kind": "GA"},
+    {"lane": "v4.1-flash-exp @ official (preview, retired)", "pass": 14, "kind": "preview (retired)"}
+  ]},
+  "width": 620,
+  "height": 170,
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 3, "height": 22},
+      "encoding": {
+        "y": {"field": "lane", "type": "nominal", "sort": "-x", "axis": {"labelFontSize": 12, "labelLimit": 0, "title": null}},
+        "x": {"field": "pass", "type": "quantitative", "scale": {"domain": [0, 23]}, "axis": {"title": "cases passed (/ 23)", "grid": true}},
+        "color": {"field": "kind", "type": "nominal", "scale": {"range": ["#00838F", "#90A4AE"]}, "legend": {"title": "candidate"}}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 12, "color": "#006064"},
+      "encoding": {
+        "y": {"field": "lane", "type": "nominal", "sort": "-x"},
+        "x": {"field": "pass", "type": "quantitative"},
+        "text": {"field": "pass", "type": "quantitative"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#FAFEFE",
+  "title": {"text": "正代三条道 + 已下线预览 —— 2026-W37 对拍(全库 23 案,effort=high)", "fontSize": 15, "anchor": "start"},
+  "data": {"values": [
+    {"lane": "deepseek-flash @ CommandCode", "pass": 17, "kind": "正代 GA"},
+    {"lane": "deepseek-flash @ DeepSeek 官方", "pass": 16, "kind": "正代 GA"},
+    {"lane": "deepseek-flash @ OpenCode Go", "pass": 16, "kind": "正代 GA"},
+    {"lane": "v4.1-flash-exp @ 官方(预览,已下线)", "pass": 14, "kind": "预览·已下线"}
+  ]},
+  "width": 620,
+  "height": 170,
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 3, "height": 22},
+      "encoding": {
+        "y": {"field": "lane", "type": "nominal", "sort": "-x", "axis": {"labelFontSize": 12, "labelLimit": 0, "title": null}},
+        "x": {"field": "pass", "type": "quantitative", "scale": {"domain": [0, 23]}, "axis": {"title": "通过案数(/ 23)", "grid": true}},
+        "color": {"field": "kind", "type": "nominal", "scale": {"range": ["#00838F", "#90A4AE"]}, "legend": {"title": "考生"}}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 12, "color": "#006064"},
+      "encoding": {
+        "y": {"field": "lane", "type": "nominal", "sort": "-x"},
+        "x": {"field": "pass", "type": "quantitative"},
+        "text": {"field": "pass", "type": "quantitative"}
+      }
+    }
+  ]
+}

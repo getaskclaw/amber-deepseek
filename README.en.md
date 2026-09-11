@@ -9,6 +9,12 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 - Cases, oracles, transcripts and intermediates are **never published**.
 - Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode) (OpenCode Go lane), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (CommandCode lane). Third-party-vendor scores for the same deepseek-v4 family live in those repos; **same-name cross-vendor duels** (official API / OpenCode Go / CommandCode — the same name may not be the same endpoint) live in the latter two. This repo's comparison axis is **cross-version on the official lane**, and every cross-repo citation carries an explicit date and band declaration.
 
+## W37 in one minute
+
+![Three GA lanes + the retired preview — 2026-W37](docs/images/w37-ga-duel.en.png)
+
+Same v4.1 brain, GA day (2026-09-10), same effort=high, same 23 cases and hashes, three lanes side by side: **CommandCode 17 / DeepSeek official 16 / OpenCode Go 16**; the gray official preview (retired) sits at 14 for contrast. Per-case matrix, token bill and regression faces are in the [2026-W37 issue](results/2026-W37.md). Chart sources live next to the PNGs (`docs/images/`, Vega-Lite).
+
 ## Publication red lines
 
 1. Publish only: scores and aggregates, token usage (when reported), speed, qualitative verdicts.
@@ -23,9 +29,10 @@ Same model name, same provider, two runs can still score differently — inferen
 
 ## Results index
 
-| Issue | Content | Headline |
-|---|---|---|
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview) full-library debut (23 cases) | 14/23 (12/21 public subset); zero invalid scored papers; ~1/30 the input tokens of its 0731 sibling on third-party lanes; strong build/ops, clear regressions on adversarial review and delivery form; vision case first mis-judged capability-skip, retaken after a raw-API probe and scored a fail (see Errata); 2026-09-10 addendum: preview retired on schedule, GA `deepseek-flash` identity verification green on a 3-case signature; **Addendum 2 (same day): GA full-library debut 16/23 (14/21 public subset)** — blank-paper disease and clean-review regression both fixed, same band as [amber-opencode](https://github.com/getaskclaw/amber-opencode) (16/23) / [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (17/23), deferred-exam list closed |
+| Issue | Candidate | Score (23 / public 21) | Headline |
+|---|---|---|---|
+| [2026-W37](results/2026-W37.md) | **deepseek-flash** (GA, on GA day) | **16/23** (14/21) | blank-paper and clean-review regressions fixed; three-lane band; deferred exams closed; 0.75M input, family low; review/vision/UI still fail |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview, retired) | 14/23 (12/21) | zero invalid scored papers; ~1/30 the input tokens of its 0731 siblings; strong build/ops; vision case overturned and retaken (see Errata/Addenda) |
 
 ## Disclaimer
 
