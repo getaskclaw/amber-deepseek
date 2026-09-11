@@ -1,6 +1,6 @@
 # amber-deepseek
 
-Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort bands. **Cases stay private; results are public.** 中文说明:[README.md](README.md)
+Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort bands. **Cases stay private; results are public.** 中文说明：[README.md](README.md)
 
 ## What this is
 
