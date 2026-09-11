@@ -15,7 +15,7 @@ English: [README.en.md](README.en.md)
 
 ![正代三条道 + 已下线预览 —— 2026-W37 对拍](docs/images/w37-ga-duel.png)
 
-同一个 v4.1 脑,GA 当日(2026-09-10)同 high 档、同 23 案同哈希,三条道并排:**CommandCode 17 / DeepSeek 官方 16 / OpenCode Go 16**;灰色的官方预览版(已下线)14 作对照。逐案矩阵、token 账单与退步面都在 [2026-W37 期文](results/2026-W37.md)。图源与 PNG 同目录(`docs/images/`,Vega-Lite)。
+同一个 v4.1 脑，GA 当日（2026-09-10）同 high 档、同 23 案同哈希，三条道并排：**CommandCode 17 / DeepSeek 官方 16 / OpenCode Go 16**；灰色的官方预览版（已下线）14 作对照。逐案矩阵、token 账单与退步面都在 [2026-W37 期文](results/2026-W37.md)。图源与 PNG 同目录（`docs/images/`，Vega-Lite）。
 
 ## 发布纪律（红线）
 
@@ -33,8 +33,8 @@ English: [README.en.md](README.en.md)
 
 | 期 | 考生 | 成绩(23 案 / 公共子集 21) | 一句话 |
 |---|---|---|---|
-| [2026-W37](results/2026-W37.md) | **deepseek-flash**(正代,GA 当日) | **16/23**(14/21) | 白卷病与干净审查退步均修复;三道同分带;欠考清单销账;input 0.75M 家族最低带;审查/视觉/UI 三面仍挂 |
-| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910(预览,已下线) | 14/23(12/21) | 计分卷零废卷;input≈0731 三方道的 1/30;施工/OPS 强;视觉案误判翻案补考(详期文 Errata/Addenda) |
+| [2026-W37](results/2026-W37.md) | **deepseek-flash**（正代，GA 当日） | **16/23**（14/21） | 白卷病与干净审查退步均修复；三道同分带；欠考清单销账；input 0.75M 家族最低带；审查/视觉/UI 三面仍挂 |
+| [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910（预览，已下线） | 14/23（12/21） | 计分卷零废卷；input≈0731 三方道的 1/30；施工/OPS 强；视觉案误判翻案补考（详期文 Errata/Addenda） |
 
 ## 免责
 
