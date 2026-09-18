@@ -8,7 +8,7 @@
   ],
   "fontSize": 16,
   "anchor": "start",
-  "subtitle": "label = cases passed / cases in face; ✗ and ∅ count as not passed; scored d2 cells read as ✓/✗ only",
+  "subtitle": "label = cases passed / cases in face; ✗ and ∅ count as not passed; scored defect-hunt cells read as ✓/✗ only",
   "subtitleFontSize": 11,
   "subtitleColor": "#777",
   "subtitlePadding": 6
