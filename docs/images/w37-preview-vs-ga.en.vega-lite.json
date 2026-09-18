@@ -1,0 +1,363 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "preview → GA: same brain, only the delivery shape got fixed (same week, band, hashes)",
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "text +0.33 = the A-791e90ac no-extractable-code failure fixed; every other face identical case-by-case — 14/23 → 16/23 is delivery discipline, not capability",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 480,
+ "height": 256,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "face": "text",
+      "from": 0.667,
+      "to": 1.0
+     },
+     {
+      "face": "build",
+      "from": 0.958,
+      "to": 0.958
+     },
+     {
+      "face": "ops",
+      "from": 1.0,
+      "to": 1.0
+     },
+     {
+      "face": "req-drift",
+      "from": 1.0,
+      "to": 1.0
+     },
+     {
+      "face": "verify",
+      "from": 0.415,
+      "to": 0.415
+     },
+     {
+      "face": "review",
+      "from": 0.389,
+      "to": 0.389
+     },
+     {
+      "face": "ui-build",
+      "from": 0.0,
+      "to": 0.0
+     },
+     {
+      "face": "vision",
+      "from": 0.333,
+      "to": 0.222
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "color": "#ccc",
+    "strokeWidth": 2.5
+   },
+   "encoding": {
+    "x": {
+     "field": "from",
+     "type": "quantitative"
+    },
+    "x2": {
+     "field": "to"
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "text",
+       "build",
+       "ops",
+       "req-drift",
+       "verify",
+       "review",
+       "ui-build",
+       "vision"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "text",
+      "v": 0.667,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "build",
+      "v": 0.958,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "ops",
+      "v": 1.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "req-drift",
+      "v": 1.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "verify",
+      "v": 0.415,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "review",
+      "v": 0.389,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "ui-build",
+      "v": 0.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "vision",
+      "v": 0.333,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "text",
+      "v": 1.0,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "build",
+      "v": 0.958,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "ops",
+      "v": 1.0,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "req-drift",
+      "v": 1.0,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "verify",
+      "v": 0.415,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "review",
+      "v": 0.389,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "ui-build",
+      "v": 0.0,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "vision",
+      "v": 0.222,
+      "band": "to",
+      "dir": "loss"
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "opacity": 1,
+    "stroke": "white",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "completion (pin pass-rate)",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "text",
+       "build",
+       "ops",
+       "req-drift",
+       "verify",
+       "review",
+       "ui-build",
+       "vision"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "size": {
+     "field": "band",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "from",
+       "to"
+      ],
+      "range": [
+       190,
+       110
+      ]
+     },
+     "legend": null
+    },
+    "color": {
+     "field": "dir",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "from",
+       "gain",
+       "flat",
+       "loss"
+      ],
+      "range": [
+       "#999999",
+       "#1e8449",
+       "#5b8fc9",
+       "#c0392b"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 10,
+      "labelExpr": "{'from':'v4.1-flash preview (09-08)','gain':'GA up','flat':'flat','loss':'GA down'}[datum.value]"
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "text",
+      "v": 1.0,
+      "t": "+0.33"
+     },
+     {
+      "face": "build",
+      "v": 0.958,
+      "t": "0"
+     },
+     {
+      "face": "ops",
+      "v": 1.0,
+      "t": "0"
+     },
+     {
+      "face": "req-drift",
+      "v": 1.0,
+      "t": "0"
+     },
+     {
+      "face": "verify",
+      "v": 0.415,
+      "t": "0"
+     },
+     {
+      "face": "review",
+      "v": 0.389,
+      "t": "0"
+     },
+     {
+      "face": "ui-build",
+      "v": 0.0,
+      "t": "0"
+     },
+     {
+      "face": "vision",
+      "v": 0.333,
+      "t": "-0.11"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "align": "left",
+    "dx": 10,
+    "color": "#555"
+   },
+   "encoding": {
+    "x": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal"
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  }
+ ]
+}
