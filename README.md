@@ -19,6 +19,8 @@ English: [README.en.md](README.en.md)
 
 同一个 v4.1 脑，GA 当日（2026-09-10）同 high 档、同 23 案同哈希，三条道并排：**CommandCode 17 / DeepSeek 官方 16 / OpenCode Go 16**；灰色的官方预览版（已下线）14 作对照。逐案矩阵、token 账单与退步面都在 [2026-W37 期文](results/2026-W37.md)。图源与 PNG 同目录（`docs/images/`，Vega-Lite）。补记 2026-09-13：同脑另两条道已发布——Ollama 道 17/23（09-11）、WorkBuddy ACP 道 15/23（09-12），见 [amber-ollama](https://github.com/getaskclaw/amber-ollama) / [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy)。
 
+> ⚠️ **三值化预览**（W38 更正特刊草稿 · 未签发 · 本草稿分支仅供审阅）：整数成绩将改写为「确认过 / 确认挂 / 挂起区间」。本仓：改判 0 格、挂起 6 格（挂起格只可能上移，补考前不计任何聚合、不给新名次）。另：假绿双向审计（WO-BRAIN）未开庭，现有 ✓ 格含「假及格」风险，特刊将如实标注。
+
 ## 发布纪律（红线）
 
 1. 只发：分数与聚合、token 用量（若车道上报）、速度、定性裁决。
