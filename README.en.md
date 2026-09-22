@@ -40,6 +40,7 @@ Same model name, same provider, two runs can still score differently — inferen
 |---|---|---|---|
 | [2026-W37](results/2026-W37.md) | **deepseek-flash** (GA, on GA day) | **16/23** (14/21) | blank-paper and clean-review regressions fixed; three-lane band; deferred exams closed; 0.75M input, family low; review/vision/UI still fail |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview, retired) | 14/23 (12/21) | zero invalid scored papers; ~1/30 the input tokens of its 0731 siblings; strong build/ops; vision case overturned and retaken (see Errata/Addenda) |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 6 held here | 4 W37 preview-column cells + 2 GA cells held; the preview endpoint is retired, so those 4 can only move by adjudication |
 
 ## Disclaimer
 

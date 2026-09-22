@@ -42,6 +42,7 @@ English: [README.en.md](README.en.md)
 |---|---|---|---|
 | [2026-W37](results/2026-W37.md) | **deepseek-flash**（正代，GA 当日） | **16/23**（14/21） | 白卷病与干净审查退步均修复；三道同分带；欠考清单销账；input 0.75M 家族最低带；审查/视觉/UI 三面仍挂 |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910（预览，已下线） | 14/23（12/21） | 计分卷零废卷；input≈0731 三方道的 1/30；施工/OPS 强；视觉案误判翻案补考（详期文 Errata/Addenda） |
+| [2026-W38 更正特刊](results/2026-W38-correction.md) | W38 全库复核:本仓改判 0 格 · 挂起 6 格 | W37 预览版 4 格 + GA 2 格挂起;预览版已下线,该 4 格只能走改判 |
 
 ## 免责
 
