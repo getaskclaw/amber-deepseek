@@ -6,6 +6,8 @@
 
 > ⚠️ **更正（2026-10-02）**：以下考卷在作答时越出考卷、接触了判分材料，不计胜负。deepseek-flash (GA) @ DeepSeek 官方 有 1 张卷（A-a5608487）改记 NA，成绩 17/24 → **16'/24**；deepseek-v4.1-flash-exp（预览，冻结道）@ DeepSeek 官方 有 1 张卷（A-a5608487）改记 NA，成绩 14/23∅ → **13'/23∅**。原因是考场隔离缺陷，责任在我们。本页其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.md)为准。
 
+> **2026-10-07 更新**：A-cdc3d11a（审查）：某个审查案上，判分器把一条格式正确的发现里的每个小点都当成一条未经证实的独立断言，又把答案清单之外的真实缺陷当成误报，所以一份正确、格式规范的审查报告也到不了及格线；该案在所有车道上挂起，分母不变，待判分器和考场修好、重新补考后再定。本车道（deepseek-flash (GA) @ DeepSeek 官方）这一格改记 NA（挂起），不记负；该案由负改记 NA 的车道共 27 条，没有重新考试，也不对任何模型的能力下结论。过案数不变（榜上 16'/24）；负案 6→5，NA 2→3；审查轴 1/2 不变、另有 1 个 NA。[2026-W37 期文](results/2026-W37.md)的 Full matrix 里 GA 列该格已照此改记，其余各列和图表未动。见[规范仓 2026-10-07 的更正（A-cdc3d11a）](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-07-a-cdc3d11a.md)。
+
 用私有题库 **AMBER** 实测 DeepSeek 官方 API（api.deepseek.com）在售模型（正代、预览版、不同推理档位），只公开结果，不公开题目。
 
 ## 这是什么
