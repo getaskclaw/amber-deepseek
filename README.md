@@ -2,20 +2,19 @@
 
 # amber-deepseek
 
-> ⚠️ **Correction (2026-10-02, second)**: one defense-axis case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the candidate delivered, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
+> ⚠️ **Correction (2026-10-02, second)**: one defense case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the model gave in, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
 
-> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. deepseek-flash (GA) @ DeepSeek official: 1 paper (A-a5608487) now NA, score 17/24 → **16'/24**; deepseek-v4.1-flash-exp (preview, frozen lane) @ DeepSeek official: 1 paper (A-a5608487) now NA, score 14/23∅ → **13'/23∅**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a model that left its own paper and touched grading material; they count neither as a pass nor as a fail. deepseek-flash (GA) @ DeepSeek official: 1 paper (A-a5608487) now NA, score 17/24 → **16'/24**; deepseek-v4.1-flash-exp (preview, frozen lane) @ DeepSeek official: 1 paper (A-a5608487) now NA, score 14/23∅ → **13'/23∅**. The cause was an isolation fault in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
 
 Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models on the official DeepSeek API (api.deepseek.com) — stable releases, preview builds, across reasoning-effort band (the thinking-effort setting)s. **Cases stay private; results are public.**
 
 ## What this is
 
-- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
-
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a case with more than one variant has more runs).
 - One `results/YYYY-Www.md` per issue: same cases, same harness (the program that runs the exam and scores it), full library per model; same-family versions and providers side by side.
-- Each issue pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run process exited), token usage (when the lane reports it) and latency, environment fingerprint, and a qualitative verdict written under evidence discipline.
+- Each issue pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run ended), token usage (when the lane reports it) and latency, environment fingerprint, and a verdict written under evidence rules.
 - Cases, oracles, transcripts (full answer logs)s and intermediates are **never published**.
-- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode) (OpenCode Go lane), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (CommandCode lane), [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy) (WorkBuddy ACP lane), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun). Third-party-vendor scores for the same deepseek-v4 family live in those repos; **same-name cross-vendor duels** (official API / OpenCode Go / CommandCode — the same name may not be the same endpoint) live in the latter two. This repo's comparison axis is **cross-version on the official lane**, and every cross-repo citation carries an explicit date and band declaration.
+- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-opencode](https://github.com/getaskclaw/amber-opencode) (OpenCode Go lane), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (CommandCode lane), [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy) (WorkBuddy ACP lane), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun). Third-party-vendor scores for the same deepseek-v4 family live in those repos; **same-name cross-vendor duels** (official API / OpenCode Go / CommandCode — the same name may not be the same endpoint) live in the latter two. This repo's benchmark axis is **cross-version on the official lane**, and every cross-repo citation carries an explicit date and band.
 
 ## W37 in one minute
 
@@ -25,15 +24,15 @@ Same v4.1 brain, GA day (2026-09-10), same effort=high, same 23 cases and hashes
 
 ## Publication red lines
 
-1. Publish only: scores and aggregates, token usage (when reported), speed, qualitative verdicts.
-2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, anything that could reconstruct a case.
-3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — verifiable against the public hash index in [amber](https://github.com/getaskclaw/amber).
+1. Publish only: scores and totals, token usage (when reported), speed, verdicts.
+2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, anything that could rebuild a case.
+3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — checkable against the public hash index in [amber](https://github.com/getaskclaw/amber).
 4. Case numbering is private: public matrices use stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes only.
 5. Tone: community measurement, not vendor attacks.
 
-## A methodological premise
+## A methods note
 
-Same model name, same provider, two runs can still score differently — inference parameters, load, and server-side versions drift. Preview/experimental models also carry lifecycle risk (they can vanish overnight). Every conclusion here is dated and banded, and we re-test periodically. A single day's number is a snapshot, not a law.
+Same model name, same provider, two runs can still score differently — inference parameters, load, and server-side versions drift. Preview/experimental models also carry lifecycle risk (they can vanish overnight). Every conclusion here is dated and banded, and we re-test on a fixed rhythm. A single day's number is a snapshot, not a law.
 
 ## Charts
 
@@ -46,8 +45,8 @@ Same model name, same provider, two runs can still score differently — inferen
 |---|---|---|---|
 | [2026-W37](results/2026-W37.md) | **deepseek-flash** (GA, on GA day) | **16/23** (14/21) | blank-paper and clean-review regressions fixed; three-lane band; deferred exams closed; 0.75M input, family low; review/vision/UI still fail |
 | [2026-W37](results/2026-W37.md) | deepseek-v4.1-flash-expires-on-0910 (preview, retired) | 14/23 (12/21) | zero invalid scored papers; ~1/30 the input tokens of its 0731 siblings; strong build/ops; vision case overturned and retaken (see Errata/Addenda) |
-| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 6 held here | 4 W37 preview-column cells + 2 GA cells held; the preview endpoint is retired, so those 4 can only move by adjudication |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 6 held here | 4 W37 preview-column cells + 2 GA cells held; the preview endpoint is retired, so those 4 can only move by a new ruling |
 
 ## Disclaimer
 
-Not affiliated with or sponsored by DeepSeek. Scores are dated, band-specific snapshots, not purchasing advice.
+Not affiliated with or sponsored by DeepSeek. Scores are dated, band-specific snapshots, not buying advice.
